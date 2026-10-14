@@ -1,0 +1,7 @@
+// This file is SUPPOSED to fail. Bindings are immutable unless marked `mut`.
+//
+//   python c7c.py build examples/errors/immutable.c7
+fn main() {
+    let x: i32 = 5;
+    x = 6;
+}

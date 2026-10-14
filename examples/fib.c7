@@ -1,0 +1,16 @@
+// Naive recursive Fibonacci. Functions can be used before they are declared.
+use std::io;
+
+fn main() -> i32 {
+    for i in 0..20 {
+        println!("fib({}) = {}", i, fib(i as u64));
+    }
+    return 0;
+}
+
+fn fib(n: u64) -> u64 {
+    if n < 2 {
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2);
+}

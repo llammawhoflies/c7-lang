@@ -1,0 +1,7 @@
+// The classic.
+use std::io;
+
+fn main() {
+    let name = "world";
+    println!("Hello, {}!", name);
+}
